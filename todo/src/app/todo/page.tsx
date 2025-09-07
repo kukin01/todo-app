@@ -41,8 +41,8 @@ const AddTodo: React.FC = () => {
     const items = fetchedItems.length;
     const doneItems = fetchedItems.filter(item => item.completed).length;
     return (
-      <div className='h-screen w-full bg-[#0D0714] flex justify-center items-center'>
-        <div className='bg-[#1D1825] h-189.5 w-145.5 flex flex-col  justify-center gap-6 items-center border-none rounded-2xl px-2 py-4'>
+            <div className='min-h-screen w-full bg-[#0D0714] flex justify-center items-center'>
+                <div className='bg-[#1D1825] w-full h-full sm:w-[36rem] sm:h-auto flex flex-col justify-center gap-6 items-center border-none rounded-2xl px-2 py-4 sm:rounded-2xl sm:px-2 sm:py-4'>
                         <div className='flex gap-4'>
                                 <Input
                                     placeholder='Add a new task'
